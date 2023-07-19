@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+  }
+
+#text{
+    text-decoration: solid;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(202, 28, 28);
+}
+
+h2{
+    color: green;
+}
+
+pre{
+    font-size: 28px;
+    color: aliceblue;
+}
+.box {
+    background-color: rgb(14, 123, 147);
+    width: 200px;
+    height: 200px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #83cf20;
+    border: 1px solid rgb(12, 12, 12);
+    padding: 20px;
+}

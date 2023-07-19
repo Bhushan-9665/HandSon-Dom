@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!--Q1-->
+
+        <h2>Q1 Write the code to access element which is having id as "text"</h2>
+        <br>
+        <pre>let a = document.getElementById("text");
+                    console.log(a)</pre>
+
+            <br><br><br>
+
+        <div id="text">This is the element with ID "text"</div>
+        <br><br><br>
+
+        <!-- <div>This is the element with ID "text"</div> -->
+
+        <!--Q2-->
+
+        <h2>Q2 Write the code to access element which is having tag as "h1"</h2>
+        <br><br>
+        <pre>let b = document.getElementsByTagName("h1");
+            console.log(b)</pre>
+            <br><br><br>
+
+        <h2>This is an h1 element</h2>
+        <br><br><br>
+
+        <!--Q3-->
+
+        <h2>Q3 Write the code to access element which is having class as "box"</h2>
+        <br><br>
+        <pre>let c = document.querySelector(".box");
+            console.log(c)</pre>
+            <br><br><br>
+
+        <div class="box">This is a box element</div>
+        <br><br><br>
+
+        <!--Q4-->
+
+        <h2>Q4
+            Hello
+                    Change the heading from "Hello" to "Hello World" using DOM functions
+        </h2>
+        <br><br>
+        <pre>let heading = document.getElementById("myHeading");
+            heading.textContent = "Hello World";
+            console.log(heading)</pre>
+            <br><br><br>
+
+        <h1 id="myHeading-1">Hello</h1>
+        <br><br><br>
+
+        <!--Q5-->
+
+        <h2>Q5 Create an HTML page having content as Hello world and a button named Replace Text. When user will click on
+            this button page content should be changed to "Welcome to Elevation academy"</h2>
+            <br><br>
+
+        
+            <pre>function replaceText() {
+                const contentElement = document.getElementById("abc");
+                contentElement.textContent = "Welcome to Elevation academy";
+            }</pre>
+
+
+
+                <br>
+
+        <h1 id="abc">Hello World</h1>
+        <br><br><br>
+
+        <button id="rep" onclick="replaceText()">Replace Text</button>
+        <br><br><br>
+
+        <!--Q6-->
+
+        <h2>Q6
+            Hello
+
+                    Add one style attribute and give text color as red and id attribute and give the id value as
+                    "heading" in
+                    the above given h1 tag using DOM functions
+        </h2>
+        <br><br>
+        <pre>const heading = document.getElementById("myHeading");
+            heading.style.color = 'red';
+            heading.setAttribute("id", "heading");</pre>
+            <br><br><br>
+
+        <h1 id="myHeading">Hello</h1>
+        <br><br><br>
+
+        <!--Q7-->
+
+        <h2>Q7 Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also
+            create button at the bottom named "Change Flex direction". When user clicks on this button, the cards
+            arrangement should be changed to vertical direction.</h2>
+            <br><br>
+            <pre>function changeFlexDirection() {
+                const container = document.querySelector('.container');
+                const currentFlexDirection = container.style.flexDirection;
+            
+                if (currentFlexDirection === 'row') {
+                    container.style.flexDirection = 'column';
+                } else {
+                    container.style.flexDirection = 'row';
+                }
+            } </pre>
+            <br><br><br>
+
+        <div class="container">
+
+            <div class="card">Card 1</div>
+
+            <div class="card">Card 2</div>
+
+            <div class="card">Card 3</div>
+
+        </div>
+
+        <br>
+
+        <button onclick="changeFlexDirection()">Change Flex Direction</button>
+        <br>
+        <br>
+
+        <!--Q8-->
+
+        <h2>Q8 What’s the difference between window vs document?</h2>
+        <br>
+
+        <pre>
+            Window:
+                The "window" object represents the browser window or tab that contains the web page. It is the top-level 
+                object in the browser's object hierarchy. The "window" object provides various properties and methods 
+                for interacting with the browser window and controlling its behavior. It acts as a global scope for 
+                JavaScript code running within the browser. Some common properties and methods of the "window" object include:
+
+                "window.location": Provides information about the current URL and allows you to navigate to different URLs.
+                "window.document": Refers to the "document" object representing the HTML document loaded in the window.
+                "window.alert()": Displays an alert dialog box.
+                "window.setTimeout()": Executes a function after a specified delay.
+
+            Document:
+                The "document" object represents the HTML document that is loaded in the browser window. It provides 
+                access to the content and structure of the web page, allowing manipulation and interaction with its 
+                elements. The "document" object is a child of the "window" object.The "document" object provides 
+                various properties and methods for working with the HTML document, such as:
+                
+                "document.getElementById()": Retrieves an HTML element based on its unique ID attribute.
+                "document.querySelector()": Retrieves the first HTML element that matches a specific CSS selector.
+                "document.createElement()": Creates a new HTML element dynamically.
+                "document.title": Gets or sets the title of the web page.
+        </pre>
+
+        <!--Q9-->
+
+        <h2>Q9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
+            second</h2>
+            <br><br>
+
+            
+              <div>
+                <h1>Timer Clock</h1>
+                <div id="clock"></div>
+              </div>
+
+        <br><br><br>
+
+
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
