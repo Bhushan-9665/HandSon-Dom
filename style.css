@@ -6,14 +6,14 @@
 
   body{
     width: 100%;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(65, 64, 64);
   }
 
 #text{
     text-decoration: solid;
     font-size: x-large;
     font-weight: bold;
-    color: rgb(202, 28, 28);
+    /* color: rgb(202, 28, 28); */
 }
 
 h2{
@@ -41,4 +41,15 @@ pre{
     background-color: #83cf20;
     border: 1px solid rgb(12, 12, 12);
     padding: 20px;
+}
+
+#clock{
+    color: yellow;
+    font-size: 48px;
+}
+
+#rep{
+    width: 200px;
+    height: 20;
+    cursor: pointer;
 }

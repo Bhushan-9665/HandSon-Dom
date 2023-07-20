@@ -18,14 +18,14 @@ let b = document.getElementsByTagName("h1");
 
 // Que-4 -----------------------------------------------
 
-    let heading = document.getElementById("myHeading-1");
-            heading.textContent = "Hello World";
-            console.log(heading)
+    let heading1 = document.getElementById("myHeading-1");
+            heading1.textContent = "Hello World";
+            console.log(heading1)
 
 // Que-5 -----------------------------------------------
         function replaceText() {
-            const contentElement = document.querySelector("abc");
-            contentElement.textContent = "Welcome to Elevation academy";
+            const contentElement = document.querySelector("#abc");
+            contentElement.textContent = ("Welcome to Elevation academy");
         }
 
 // Que-6 -----------------------------------------------
@@ -37,15 +37,16 @@ let b = document.getElementsByTagName("h1");
 // Que-7 -----------------------------------------------
 
         function changeFlexDirection() {
-        const container = document.getElementsByClassName('container');
+        const container = document.querySelector('.container');
         const currentFlexDirection = container.style.flexDirection;
-        }
+        
 
-        if (currentFlexDirection == 'row') {
+        if (currentFlexDirection === 'row') {
         container.style.flexDirection = 'column';
         } else {
         container.style.flexDirection = 'row';
         }
+    }
 
 // Que-8 -----------------------------------------------
 
@@ -60,14 +61,8 @@ function formatTime(time) {
     var seconds = formatTime(now.getSeconds());
   
     var clock = document.getElementById('clock');
-    // clock.textContent = hours + ':' + minutes + ':' + seconds;
-    console.log(`Time is - ${hours} :  ${minutes}  :${seconds} `);
+    clock.textContent = hours + ':' + minutes + ':' + seconds;
   }
   
-  // Update the clock immediately
-  updateClock();
-  
-  // Update the clock every second (1000 milliseconds)
-  setInterval(() =>{
-    updateClock();
-},1000);
+
+setInterval(updateClock, 1000);
