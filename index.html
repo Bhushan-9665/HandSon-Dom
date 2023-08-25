@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DoM</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -18,7 +18,7 @@
         <pre>let a = document.getElementById("text");
                     console.log(a)</pre>
 
-            <br><br><br>
+        <br><br><br>
 
         <div id="text">This is the element with ID "text"</div>
         <br><br><br>
@@ -31,7 +31,7 @@
         <br><br>
         <pre>let b = document.getElementsByTagName("h1");
             console.log(b)</pre>
-            <br><br><br>
+        <br><br><br>
 
         <h2>This is an h1 element</h2>
         <br><br><br>
@@ -42,7 +42,7 @@
         <br><br>
         <pre>let c = document.querySelector(".box");
             console.log(c)</pre>
-            <br><br><br>
+        <br><br><br>
 
         <div class="box">This is a box element</div>
         <br><br><br>
@@ -51,32 +51,33 @@
 
         <h2>Q4
             Hello
-                    Change the heading from "Hello" to "Hello World" using DOM functions
+            Change the heading from "Hello" to "Hello World" using DOM functions
         </h2>
         <br><br>
         <pre>let heading = document.getElementById("myHeading");
             heading.textContent = "Hello World";
             console.log(heading)</pre>
-            <br><br><br>
+        <br><br><br>
 
         <h1 id="myHeading-1">Hello</h1>
         <br><br><br>
 
         <!--Q5-->
 
-        <h2>Q5 Create an HTML page having content as Hello world and a button named Replace Text. When user will click on
+        <h2>Q5 Create an HTML page having content as Hello world and a button named Replace Text. When user will click
+            on
             this button page content should be changed to "Welcome to Elevation academy"</h2>
-            <br><br>
+        <br><br>
 
-        
-            <pre>function replaceText() {
+
+        <pre>function replaceText() {
                 const contentElement = document.getElementById("abc");
                 contentElement.textContent = "Welcome to Elevation academy";
             }</pre>
 
 
 
-                <br>
+        <br>
 
         <h1 id="abc">Hello World</h1>
         <br><br><br>
@@ -89,26 +90,27 @@
         <h2>Q6
             Hello
 
-                    Add one style attribute and give text color as red and id attribute and give the id value as
-                    "heading" in
-                    the above given h1 tag using DOM functions
+            Add one style attribute and give text color as red and id attribute and give the id value as
+            "heading" in
+            the above given h1 tag using DOM functions
         </h2>
         <br><br>
         <pre>const heading = document.getElementById("myHeading");
             heading.style.color = 'red';
             heading.setAttribute("id", "heading");</pre>
-            <br><br><br>
+        <br><br><br>
 
         <h1 id="myHeading">Hello</h1>
         <br><br><br>
 
         <!--Q7-->
 
-        <h2>Q7 Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also
+        <h2>Q7 Create three cards on HTML page and arrange them using flex property in row or horizontal direction and
+            also
             create button at the bottom named "Change Flex direction". When user clicks on this button, the cards
             arrangement should be changed to vertical direction.</h2>
-            <br><br>
-            <pre>function changeFlexDirection() {
+        <br><br>
+        <pre>function changeFlexDirection() {
                 const container = document.querySelector('.container');
                 const currentFlexDirection = container.style.flexDirection;
             
@@ -118,7 +120,7 @@
                     container.style.flexDirection = 'row';
                 }
             } </pre>
-            <br><br><br>
+        <br><br><br>
 
         <div class="container">
 
@@ -169,18 +171,18 @@
 
         <h2>Q9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
             second</h2>
-            <br><br>
+        <br><br>
 
-            
-              <div>
-                <h1>Timer Clock</h1><br>
-                <div id="clock"></div>
-              </div>
+
+        <div>
+            <h1>Timer Clock</h1><br>
+            <div id="clock"></div>
+        </div>
 
         <br><br><br>
 
 
-        
+
     </div>
     <script src="./script.js"></script>
 </body>
